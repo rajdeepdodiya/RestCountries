@@ -29,16 +29,15 @@ class MainActivityViewModel: ViewModel() {
 
         call.enqueue(object : Callback<List<CountryModel>> {
             override fun onResponse(call: Call<List<CountryModel>>, response: Response<List<CountryModel>>) {
-                liveDataList.postValue(response.body())
 
-//                if (response.code() == 200 && response.body() != null){
-//
-//            }
+                Log.d("MY_TAG", "onResponse: response Code - ${response.code()}")
+                if (response.code() == 200 && response.body() != null){
+                    liveDataList.postValue(response.body())
+                }
             }
-
             override fun onFailure(call: Call<List<CountryModel>>, t: Throwable) {
                 liveDataList.postValue(null)
-                Log.e("TAG", "onFailure: ${t.localizedMessage}")
+                Log.e("MY_TAG", "onFailure: ${t.localizedMessage}")
             }
         })
     }

@@ -38,10 +38,11 @@ class MainActivity : AppCompatActivity() {
                 countryListAdapter.setCountryList(it)
                 countryListAdapter.notifyDataSetChanged()
                 Toast.makeText(this, "Data fetched", Toast.LENGTH_SHORT).show()
+                Log.d("MY_TAG", "initViewModel: list: $it")
             }
             else{
                 Toast.makeText(this, "Error in getting list", Toast.LENGTH_SHORT).show()
-                Log.e("RD", "initViewModel: $it")
+                Log.e("MY_TAG", "initViewModel: list = null")
             }
         })
 

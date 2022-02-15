@@ -10,6 +10,8 @@ import com.example.restcountries.R
 import com.example.restcountries.databinding.CountryListRowBinding
 import com.example.restcountries.model.CountryModel
 import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou
+import java.text.NumberFormat
+import java.util.*
 
 class CountryListAdapter(val activity: Activity): RecyclerView.Adapter<CountryListAdapter.CountryListViewHolder>() {
 
@@ -39,11 +41,13 @@ class CountryListAdapter(val activity: Activity): RecyclerView.Adapter<CountryLi
         private val tvCountryName = view.tvCountryName
         private val tvCountryCapital = view.tvCapital
         private val tvRegion  = view.tvRegion
+        private val tvPopulation = view.tvPopulation
 
         fun bind(data: CountryModel, activity: Activity){
             tvCountryName.text = "${data.name} (${data.alpha2Code})"
             tvCountryCapital.text = "Capital: " +data.capital
             tvRegion.text = "Region: "+data.region
+            tvPopulation.text = "Population: ${NumberFormat.getNumberInstance(Locale.CANADA).format(data.population)}"
 
             GlideToVectorYou.justLoadImage(activity, Uri.parse(data.flag), flagImage)
         }
