@@ -9,14 +9,14 @@ Screenshots:
 
 
 <div align="center">
-    <img src="/screenshots/Screenshot_20220215_171310.png" width="200px"</img> 
+    <img src="/screenshots/1.png" width="200px"</img> 
 </div>
 
 <div align="center">
-    <img src="/screenshots/Screenshot_20220215_171341.png" width="200px"</img> 
+    <img src="/screenshots/2.png" width="200px"</img> 
 </div>
 
 <div align="center">
-    <img src="/screenshots/Screenshot_20220215_171341.png" width="200px"</img> 
+    <img src="/screenshots/3.png" width="200px"</img> 
 </div>
 
