@@ -50,6 +50,6 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        viewModel.makeApiCall2()
+        viewModel.makeApiCall()
     }
 }
