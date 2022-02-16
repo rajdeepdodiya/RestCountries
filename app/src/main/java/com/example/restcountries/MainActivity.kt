@@ -1,11 +1,12 @@
 package com.example.restcountries
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.restcountries.adapter.CountryListAdapter
 import com.example.restcountries.databinding.ActivityMainBinding
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         binding.countryListRecyclerView.layoutManager = LinearLayoutManager(this)
         countryListAdapter = CountryListAdapter(this)
         binding.countryListRecyclerView.adapter = countryListAdapter
+
+        val decoration = DividerItemDecoration(binding.countryListRecyclerView.context, (binding.countryListRecyclerView.layoutManager as LinearLayoutManager).orientation)
+        binding.countryListRecyclerView.addItemDecoration(decoration)
     }
 
     private fun initViewModel(){
@@ -46,6 +50,6 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        viewModel.makeApiCall()
+        viewModel.makeApiCall2()
     }
 }

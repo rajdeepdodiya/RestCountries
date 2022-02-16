@@ -9,14 +9,14 @@ Screenshots:
 
 
 <div align="center">
-    <img src="/screenshots/Screenshot_20220215_171310.png" width="200px"</img> 
+    <img src="/screenshots/Screenshot_20220216_155257.png" width="200px"</img> 
 </div>
 
 <div align="center">
-    <img src="/screenshots/Screenshot_20220215_171341.png" width="200px"</img> 
+    <img src="/screenshots/Screenshot_20220216_155420.png" width="200px"</img> 
 </div>
 
 <div align="center">
-    <img src="/screenshots/Screenshot_20220215_171412.png" width="200px"</img> 
+    <img src="/screenshots/Screenshot_20220216_155452.png" width="200px"</img> 
 </div>
 
